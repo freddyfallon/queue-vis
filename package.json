@@ -4,11 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "dependencies": {
     "amqplib": "^0.5.2",
     "csv-parse": "^2.2.0",
+    "express": "^4.16.3",
+    "helmet": "^3.12.0",
     "nodemon": "^1.17.3"
   }
 }
