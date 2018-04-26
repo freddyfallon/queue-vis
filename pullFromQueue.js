@@ -4,4 +4,4 @@ const amqplib = require('amqplib');
 
 amqplib.connect('amqp://rabbitmq')
   .then(conn => conn.createChannel()
-  .then(ch => consumeQueue(ch, 'shitty queue')));
+  .then(ch => consumeQueue(ch, 'cool queue')));
