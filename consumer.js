@@ -2,9 +2,9 @@ const amqplib = require('amqplib');
 
 
 const consumeQueue = (ch, queueName) => {
-  try {
+    try {
     ch.assertQueue(queueName, {durable: false});
-    ch.prefetch(150);
+    ch.prefetch(435);
     ch.consume(queueName, (message) => {
       console.log(`Received ${message.content.toString()}`)
       setTimeout(() => {

@@ -1,10 +1,12 @@
 const express = require('express');
 const helmet = require('helmet');
+const bodyParser = require('body-parser');
 const routes = require('./routes/index');
 
 const app = express();
 
 app.use(helmet());
+app.use(bodyParser());
 
 app.use('/', routes);
 
