@@ -1,0 +1,14 @@
+{
+  "name": "queue-vis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "csv-parse": "^2.2.0",
+    "nodemon": "^1.17.3"
+  }
+}
